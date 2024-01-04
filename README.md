@@ -5,6 +5,10 @@ La version minima de iOS es la 13.0 y corre en cualquier versión posterior.
 
 Esta APP se adapta a multiples dispositivos o tamaños de pantallas (Se crearon los constraints correspondientes).
 
+***
+Para ejecutar la APP por favor ejecutar el comando **pod install** para instalar las librerias.
+***
+
 ## HTTP
 Se uso la API https://www.themealdb.com/api.php, para acceder la informacion de las recetas ya que es libre y tiene imagenes.
 
@@ -13,6 +17,7 @@ Se uso la API https://www.themealdb.com/api.php, para acceder la informacion de 
 - www.themealdb.com/api/json/v1/1/lookup.php?i=52772   (Obtener detalle de la receta)
 
 Para conectarse a esta API se usa la clase APIService que usa el objeto APIRequest(Patron de diseño Builder) que se usa para construir peticiones HTTP de tipo (GET, POST, PUT, DELETE), para esta prueba solo fue necesario el tipo GET.
+
 
 ## Architecture
 - MVVM Design Pattern
