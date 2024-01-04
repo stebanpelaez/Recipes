@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="9Mb-Ra-a3z" customClass="MealUITableViewCell" customModule="Recipes" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="148"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9Mb-Ra-a3z" id="pqV-OZ-Pri">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="148"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5dL-q1-SaM">
+                        <rect key="frame" x="8" y="8" width="132" height="132"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="5dL-q1-SaM" secondAttribute="height" multiplier="1:1" id="GD2-U0-hqk"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Baked salmon with fennel &amp; tomatoes" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJO-MX-bN3">
+                        <rect key="frame" x="148" y="8" width="258" height="132"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="5dL-q1-SaM" secondAttribute="bottom" constant="8" id="2Lf-bn-t8r"/>
+                    <constraint firstAttribute="trailing" secondItem="PJO-MX-bN3" secondAttribute="trailing" constant="8" id="5Bj-JA-Sqe"/>
+                    <constraint firstItem="5dL-q1-SaM" firstAttribute="leading" secondItem="pqV-OZ-Pri" secondAttribute="leading" constant="8" id="Aky-np-7VI"/>
+                    <constraint firstAttribute="bottom" secondItem="PJO-MX-bN3" secondAttribute="bottom" constant="8" id="S02-oY-YXk"/>
+                    <constraint firstItem="PJO-MX-bN3" firstAttribute="leading" secondItem="5dL-q1-SaM" secondAttribute="trailing" constant="8" id="dfu-We-ETK"/>
+                    <constraint firstItem="PJO-MX-bN3" firstAttribute="top" secondItem="pqV-OZ-Pri" secondAttribute="top" constant="8" id="mNr-Fs-ZXH"/>
+                    <constraint firstItem="5dL-q1-SaM" firstAttribute="top" secondItem="pqV-OZ-Pri" secondAttribute="top" constant="8" id="pVX-7F-qax"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageViewThumbnail" destination="5dL-q1-SaM" id="tnh-PA-w3c"/>
+                <outlet property="labelTitle" destination="PJO-MX-bN3" id="sdz-Wy-tHH"/>
+            </connections>
+            <point key="canvasLocation" x="-123.18840579710145" y="57.589285714285708"/>
+        </tableViewCell>
+    </objects>
+</document>
